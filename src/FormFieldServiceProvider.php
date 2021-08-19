@@ -49,7 +49,7 @@ class FormFieldServiceProvider extends ServiceProvider
         $this->app->singleton('input', function ($app) {
             $input = new Input($app['view'], $app['request']);
 
-            return $input->setSessionStore($app['session.store']);;
+            return $input->setSessionStore($app['session.store']);
         });
     }
 }

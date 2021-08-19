@@ -34,8 +34,8 @@ trait Groupable
         $html = $toggler = $directive = '';
 
         if ($this->factory->attributes->get('type') === 'password') {
+            // Add the attributes and directives concerning AlpineJS.
             $this->factory->attributes->add(':type', 'type');
-
             $directive = ' x-data="password"';
 
             $toggler .= '<button type="button" x-bind="trigger" tabindex="-1" class="-translate-y-1/2 absolute btn p-1 right-2 top-1/2">';
